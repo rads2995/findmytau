@@ -9,7 +9,7 @@ def main():
     print(sde.optimal_stopping())
 
     plt.figure(figsize=(10,6))
-    for i in range(20):
+    for i in range(5):
         path = sde.X[:, i]
         plt.plot(np.linspace(0, sde.T, sde.M+1), path.get(), lw=1, alpha=0.7)
         

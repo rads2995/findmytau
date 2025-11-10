@@ -10,6 +10,7 @@ dependencies = [
   "ninja >= 1.13.0",
   "numpy >= 2.3.2",
   "matplotlib >= 3.10.6",
+  "cupy >= 13.6.0"
 ]
 requires-python = ">=3.11"
 authors = [
@@ -31,7 +32,7 @@ classifiers = [
 [project.urls]
 # Homepage = ""
 # Documentation = ""
-Repository = "https://github.com/rads2995/RiskyQuant"
+Repository = "https://github.com/rads2995/findmytau"
 # "Bug Tracker" = ""
 # Changelog = ""
 

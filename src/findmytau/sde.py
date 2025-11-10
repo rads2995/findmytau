@@ -5,9 +5,9 @@ class SDE:
     def __init__(
         self,
         N: cp.int64 = 10000,
-        M: cp.int64 = 1000,
+        M: cp.int64 = 2000,
         mu: cp.float64 = 0.05,
-        sigma: cp.float64 = 0.3,
+        sigma: cp.float64 = 0.2,
         x0: cp.float64 = 1.0,
         T: cp.float64 = 1.0
     ):
