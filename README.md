@@ -1,4 +1,4 @@
-# RiskyQuant
+# findmytau
 
 ## Introduction
 
