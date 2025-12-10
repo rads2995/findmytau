@@ -37,7 +37,7 @@ def main():
                 np.linspace(0, sde.T, sde.M+1), 
                 path.get(), 
                 lw=1.0, 
-                alpha=0.8
+                alpha=1.0
             )
             
             # mark the stopping point with a red dot
@@ -53,7 +53,9 @@ def main():
         # strike boundary
         plt.axhline(sde.strike, color="black", ls="--", lw=1)  
         
-        plt.xlabel("Time", fontsize=16)
-        plt.ylabel("Underlying Stock Price", fontsize=16)
+        plt.tick_params(axis='x', labelsize=12)
+        plt.tick_params(axis='y', labelsize=12)
+        plt.xlabel("Time (Years)", fontsize=12)
+        plt.ylabel("Underlying Stock Price", fontsize=12)
         plt.tight_layout()
-        plt.savefig(f"50_quantile_stock_price_{price}.png", dpi=300, bbox_inches='tight')
+        plt.savefig(f"median_stock_price_{price}.png", dpi=300, bbox_inches='tight')
